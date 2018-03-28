@@ -1,0 +1,44 @@
+{
+  "name": "semantic-ui-list",
+  "version": "2.1.6",
+  "title": "Semantic UI - List",
+  "description": "Single component release of list",
+  "homepage": "http://www.semantic-ui.com",
+  "author": {
+    "name": "Jack Lukic",
+    "email": "jack@semantic-ui.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Semantic-Org/UI-List.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Semantic-Org/Semantic-UI/issues"
+  },
+  "devDependencies": {},
+  "gitHead": "a7169804dafbfd66867894e1534af8eb936bef94",
+  "_id": "semantic-ui-list@2.1.6",
+  "scripts": {},
+  "_shasum": "3444ae3f3b02a80d6aec179eb12b01ea8452b57e",
+  "_from": "semantic-ui-list@*",
+  "_npmVersion": "3.3.12",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "semantic-bot",
+    "email": "bot@semantic-ui.com"
+  },
+  "dist": {
+    "shasum": "3444ae3f3b02a80d6aec179eb12b01ea8452b57e",
+    "tarball": "http://registry.npmjs.org/semantic-ui-list/-/semantic-ui-list-2.1.6.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "semantic-bot",
+      "email": "bot@semantic-ui.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/semantic-ui-list/-/semantic-ui-list-2.1.6.tgz",
+  "readme": "ERROR: No README data found!"
+}

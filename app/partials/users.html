@@ -1,0 +1,16 @@
+<div ng-if="users.Response!=='False'">
+
+<div class="ui relaxed list rel-results">
+  <div class="item animated" ng-repeat="user in users">
+  	<div style="background-color: #FFFFFF; color: #363B40; width: 400px; height: 70px; margin: auto; padding: 4px; font-size: 75%; opacity: 0.9;">
+  		<a href="{{user.WebsiteUrl}}">
+	    <img class="ui avatar image left floated" src="img/avatars/{{$index + 1}}.jpg" style= "border-radius: 50%; width: 65px; height: 65px">
+	    </a>
+	    <div class="content">
+	      <p><b>{{user.DisplayName}}</b></p>
+	      <p>GuildScore: <b>{{user.GuildScore}}</b></p>
+	      <p>Location: <b>{{user.Location}}</b></p>
+	    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="guild">
+  <head>
+    <title>Guild - Find right talent</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- CSS 
+        ================================================== -->
+    <!-- Bootstrap 3-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Template Styles -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+      </head>
+  <body>
+
+  	<!-- My Style Sheets -->
+  	 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+  	 <link rel="stylesheet" href="semantic-ui-list/list.css">
+  	 <link rel="stylesheet" href="css/select.css">
+  	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">
+	  
+	  <!-- NAVBAR
+	      ================================================== -->
+	  <nav class="navbar navbar-default" role="navigation">
+	  	  <div class="container">
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    
+			    <!--Replace text with your app name or logo image-->
+			    <a class="navbar-brand" href="#">Guild</a>
+			    
+			  </div>
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+			    <ul class="nav navbar-nav">
+			      <li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
+			      <li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
+			      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
+			      <li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
+			    </ul>
+			  </div>
+		  </div>
+	  </nav>
+	  
+	  
+	   <!-- HEADER
+	   ================================================== -->	  
+	  <header>
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-md-12">
+					  <h1>GUILD!</h1>
+					  <p class="lead">Find the right talent...</p>
+
+					  <div ng-controller="GuildCtrl">
+						<div id="SearchBar">
+						  <ui-select multiple ng-model="search.Tags" ng-change="change()" theme="select2" ng-disabled="disabled" style="width: 600px;">
+						    <ui-select-match placeholder="Start Typing the skills...">{{$item}}</ui-select-match>
+						    <ui-select-choices repeat="tag in availableTags | filter:$select.search">
+						      {{tag}}
+						    </ui-select-choices>
+						  </ui-select>
+						  <!--<p>Selected: {{search.Tags}}</p> -->
+						  
+						  <div style="height:50px"></div>
+						</div>
+
+						  <div id="user-info" ng-include="'partials/users.html'"></div>
+						  
+						</div>
+					  
+					  
+				</div>	  
+			</div>    
+		</div>
+	 </header>
+		
+
+	  
+	 
+	 <!-- JAVASCRIPT
+	     ================================================== -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animatescroll.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/retina.min.js"></script>
+
+    <!-- My JavaScripts-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script>
+  	<script src="js/guild.js"></script>
+  	<script src="js/select.js"></script>
+  	
+</html>

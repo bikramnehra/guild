@@ -1,0 +1,9 @@
+disable 'StackOver_User'
+drop 'StackOver_User'
+
+create "StackOver_User", "Profile_F", "Tags_F", {NUMREGIONS => 3, SPLITALGO => "UniformSplit"}
+
+
+disable 'StackOver_Tag'
+drop 'StackOver_Tag'
+create "StackOver_Tag", "Score_F", {NUMREGIONS => 3, SPLITALGO => "UniformSplit"}
